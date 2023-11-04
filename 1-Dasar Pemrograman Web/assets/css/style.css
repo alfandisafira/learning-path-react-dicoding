@@ -1,0 +1,183 @@
+body {
+    background-color: #F4E869;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #FAF2D3;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.img-brand img {
+    width: 30px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.text-brand {
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about {
+    padding: 20px;
+}
+
+.about aside {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about aside img {
+    width: 90vw;
+    border-radius: 10px;
+}
+
+.about .text-about {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-find {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border: 0 solid black;
+    border-radius: 10px;
+}
+
+.button-find:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+article .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    margin: auto;
+    background-color: #79AC78;
+    width: 80vw;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card .icon-card {
+    display: flex;
+    justify-content: center;
+}
+
+.card .text-card {
+    margin-top: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.card .icon-card img {
+    width: 150px;
+}
+
+@media (min-width:801px) {
+    header {
+        font-size: 20px;
+        padding: 0 50px;
+    }
+    
+    .brand {
+        display: flex;
+        align-items: top;
+    }
+
+    .text-brand {
+        padding-bottom: 10px;
+    }
+
+    main {
+        margin: 50px 0;
+        gap: 0;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        margin-bottom: 50px;
+    }
+
+    .about aside img {
+        width: 40vw;
+        border-radius: 20px;
+    }
+
+    .about .text-about {
+        width: 30vw;
+        gap: 20px;
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .service {
+        margin: 50px 0;
+    }
+
+    .service .title {
+        margin: 50px 0;
+    }
+
+    .cards {
+        gap: 0;
+    }
+
+    .card {
+        width: 25vw;
+    }
+}
